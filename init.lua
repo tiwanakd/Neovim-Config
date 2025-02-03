@@ -4,6 +4,13 @@ require("config.core.mappings")
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 
+local set = vim.opt_local
+
+set.shiftwidth = 2
+set.number = true
+set.relativenumber = true
+
+
 vim.diagnostic.config({
   virtual_text = true,      -- Show diagnostics as inline text
   signs = true,             -- Show diagnostics in the sign column

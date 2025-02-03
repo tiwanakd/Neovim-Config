@@ -6,7 +6,12 @@ return {
     version = '*',
 
     opts = {
-      keymap = { preset = 'default' },
+      keymap = {
+        preset = 'default',
+
+        ['<C-k>'] = { 'select_and_accept' },
+
+      },
 
       appearance = {
         use_nvim_cmp_as_default = true,
