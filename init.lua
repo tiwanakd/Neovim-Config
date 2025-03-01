@@ -10,7 +10,6 @@ set.shiftwidth = 2
 set.number = true
 set.relativenumber = true
 
-
 vim.diagnostic.config({
   virtual_text = true,      -- Show diagnostics as inline text
   signs = true,             -- Show diagnostics in the sign column
@@ -18,7 +17,6 @@ vim.diagnostic.config({
   update_in_insert = false, -- Update diagnostics only in normal mode
   severity_sort = true,     -- Sort diagnostics by severity
 })
-
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
