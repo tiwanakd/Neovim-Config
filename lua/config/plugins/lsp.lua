@@ -18,7 +18,7 @@ return {
     config = function()
       require("mason").setup()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "gopls", "bashls" },
+        ensure_installed = { "lua_ls", "gopls", "bashls", "terraformls" },
         automatic_installation = true
       })
 
@@ -49,6 +49,10 @@ return {
         capabilities = capabilities
       })
 
+      require("lspconfig").terraformls.setup({
+        filetypes = { "terraform", "terraform-vars", "hcl", "tf" },
+        capabilities = capabilities,
+      })
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
