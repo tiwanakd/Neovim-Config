@@ -3,6 +3,7 @@ require("config.core.mappings")
 
 vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
+vim.opt.laststatus = 3
 
 local set = vim.opt_local
 
