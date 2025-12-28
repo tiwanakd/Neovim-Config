@@ -18,6 +18,9 @@ vim.keymap.set("n", "<space>e", "<cmd>Oil<CR>")
 -- Map Space + w to save
 vim.api.nvim_set_keymap('n', '<Space>w', ':w<CR>', opts)
 
+-- Map Space + q to quit 
+vim.api.nvim_set_keymap('n', '<leader>Q', ':q<CR>', { noremap = true, silent = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', ']d', function()
   opts = { count = 1, float = true }
