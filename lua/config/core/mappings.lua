@@ -18,17 +18,18 @@ vim.keymap.set("n", "<space>e", "<cmd>Oil<CR>")
 -- Map Space + w to save
 vim.api.nvim_set_keymap('n', '<Space>w', ':w<CR>', opts)
 
--- Map Space + q to quit 
-vim.api.nvim_set_keymap('n', '<leader>Q', ':q<CR>', { noremap = true, silent = true })
+-- Map Space + q to quit
+vim.api.nvim_set_keymap('n', '<leader>Q', ':q<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>fq', ':q!<CR>', opts)
 
 -- Diagnostic keymaps
 vim.keymap.set('n', ']d', function()
-  opts = { count = 1, float = true }
-  vim.diagnostic.jump(opts)
+	opts = { count = 1, float = true }
+	vim.diagnostic.jump(opts)
 end, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', '[d', function()
-  opts = { count = -1, float = true }
-  vim.diagnostic.jump(opts)
+	opts = { count = -1, float = true }
+	vim.diagnostic.jump(opts)
 end, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })

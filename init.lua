@@ -54,3 +54,10 @@ vim.keymap.set("n", "<space>exp", function()
   --go build, go test ./abc
   vim.fn.chansend(job_id, { "ls -al\r\n" })
 end)
+
+--set border around lsp hover using K
+vim.keymap.set("n", "K", function()
+  vim.lsp.buf.hover({
+    border = "rounded"
+  })
+end)
