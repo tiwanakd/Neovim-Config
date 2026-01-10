@@ -8,7 +8,7 @@ return {
         cyan   = '#79dac8',
         black  = '#080808',
         white  = '#c6c6c6',
-        red    = '#ff5189',
+        red    = '#ff85ad',
         violet = '#F8C8DC',
         grey   = '#303030',
       }
