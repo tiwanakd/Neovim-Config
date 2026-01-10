@@ -5,8 +5,8 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup {
-    transparent_background = true,
-    color_overrides = {
+      transparent_background = true,
+      color_overrides = {
         mocha = {
           base = "#000000",
           mantle = "#000000",
