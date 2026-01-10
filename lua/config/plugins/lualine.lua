@@ -15,14 +15,14 @@ return {
 
       local bubbles_theme = {
         normal = {
-          a = { fg = colors.black, bg = colors.violet },
-          b = { fg = colors.white, bg = colors.grey },
-          c = { fg = colors.white },
+          a = { fg = colors.black, bg = colors.violet, gui = "bold" },
+          b = { fg = colors.white, bg = colors.grey, gui = "bold" },
+          c = { fg = colors.white, gui = "bold" },
         },
 
-        insert = { a = { fg = colors.black, bg = colors.blue } },
-        visual = { a = { fg = colors.black, bg = colors.cyan } },
-        replace = { a = { fg = colors.black, bg = colors.red } },
+        insert = { a = { fg = colors.black, bg = colors.blue, gui = "bold" } },
+        visual = { a = { fg = colors.black, bg = colors.cyan, gui = "bold" } },
+        replace = { a = { fg = colors.black, bg = colors.red, gui = "bold" } },
 
         inactive = {
           a = { fg = colors.white, bg = colors.black },
@@ -61,6 +61,5 @@ return {
         extensions = {},
       }
     end
-
   },
 }
